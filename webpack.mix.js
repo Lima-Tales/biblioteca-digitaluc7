@@ -15,3 +15,9 @@ mix.js('resources/js/app.js', 'public/js')
     .postCss('resources/css/app.css', 'public/css', [
         //
     ]);
+    mix
+    .sass('resources/sass/app.scss', 'public/css') // Compilar SCSS
+    .js('resources/js/app.js', 'public/js') // Compilar JS
+    .copy('node_modules/admin-lte/dist/css/adminlte.min.css', 'public/css') // Copiar o CSS do AdminLTE
+    .copy('node_modules/admin-lte/dist/js/adminlte.min.js', 'public/js') // Copiar o JS do AdminLTE
+    .copy('node_modules/admin-lte/plugins', 'public/plugins'); // Copiar plugins do AdminLTE
