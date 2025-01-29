@@ -22,6 +22,7 @@ class CreateBooksTable extends Migration
             $table->timestamps();
             $table->foreign('author_id')->references('id')->on('authors')->onDelete('cascade');
             $table->foreign('genre_id')->references('id')->on('genres')->onDelete('cascade');
+            $table->foreignId('genre_id')->constrained('genres');
         });
     }
 
