@@ -16,13 +16,10 @@ class CreateBooksTable extends Migration
         Schema::create('books', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('isbn')->unique();
+            $table->string('isbn')->nullable();
             $table->unsignedBigInteger('author_id');
-            $table->unsignedBigInteger('genre_id');
+            $table->unsignedBigInteger('genre_id');  // Adicionado 'genre_id' sem chave estrangeira
             $table->timestamps();
-            $table->foreign('author_id')->references('id')->on('authors')->onDelete('cascade');
-            $table->foreign('genre_id')->references('id')->on('genres')->onDelete('cascade');
-            $table->foreignId('genre_id')->constrained('genres');
         });
     }
 

@@ -19,7 +19,6 @@
             background-position: center;
             text-align: center;
             color: white;
-            font-family: Arial, sans-serif;
         }
 
         /* Título da Biblioteca */
@@ -28,7 +27,7 @@
             color: red;
             font-weight: bold;
             margin-bottom: 30px;
-            text-align: left;
+            text-align:left
         }
 
         /* Navbar personalizada */
@@ -37,7 +36,7 @@
             position: absolute;
             top: 0;
             background-color: rgba(0, 0, 0, 0.7);
-            padding: 10px 0;
+            padding: 2px 0;
             text-align: center;
         }
 
@@ -57,12 +56,11 @@
             background-color: #4CAF50;
             color: white;
             border: none;
-            padding: 12px 24px;
+            padding: 10px 20px;
             border-radius: 5px;
-            font-size: 1.2rem;
+            font-size: 1rem;
             margin-top: 20px;
             text-decoration: none;
-            transition: background-color 0.3s ease;
         }
 
         .btn-login:hover {
@@ -72,56 +70,27 @@
         /* Estilo para a seção de boas-vindas */
         .container-custom {
             padding: 20px;
-            z-index: 1; /* Garante que o conteúdo fique visível sobre a navbar */
         }
 
         h1 {
             font-size: 2.5rem;
-            margin-bottom: 15px;
         }
 
         p {
             font-size: 1.2rem;
-            margin-bottom: 20px;
-        }
-
-        /* Responsividade */
-        @media (max-width: 767px) {
-            .library-title {
-                font-size: 1.5rem;
-                text-align: center;
-            }
-
-            h1 {
-                font-size: 2rem;
-            }
-
-            .btn-login {
-                font-size: 1rem;
-                padding: 10px 20px;
-            }
-
-            .navbar-custom {
-                padding: 15px 0;
-            }
-
-            .navbar-custom .nav-link {
-                font-size: 1rem;
-                padding: 8px;
-            }
         }
     </style>
 </head>
 <body>
 
+
 <!-- Navbar -->
 <nav class="navbar-custom">
     <div>
+    <div class="library-title">Tales Lima Library</div>
         <a href="#" class="nav-link">Título 1</a>
         <a href="#" class="nav-link">Título 2</a>
         <a href="#" class="nav-link">Título 3</a>
-        <a href="#" class="nav-link">Título 4</a>
-        <a href="#" class="nav-link">Título 5</a>
     </div>
 </nav>
 

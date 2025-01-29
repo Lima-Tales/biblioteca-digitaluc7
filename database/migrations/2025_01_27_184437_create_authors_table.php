@@ -12,15 +12,16 @@ class CreateAuthorsTable extends Migration
      * @return void
      */
     public function up()
-    {
-        Schema::create('authors', function (Blueprint $table) {
+{
+    Schema::create('authors', function (Blueprint $table) {
         $table->id();
         $table->string('name');
-        $table->date('birth_date');
+        $table->string('email')->nullable();
+        $table->date('birth_date')->nullable(); // Corrigido: nullable() dentro da definição da coluna
         $table->string('nationality')->nullable();
         $table->timestamps();
-        });
-    }
+    });
+}
 
     /**
      * Reverse the migrations.

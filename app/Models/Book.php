@@ -3,9 +3,12 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Book extends Model
 {
+    use HasFactory;
+
     // Defina os campos que podem ser preenchidos
     protected $fillable = ['title', 'isbn', 'author_id', 'genre_id']; // Defina os campos conforme a sua migração
 
