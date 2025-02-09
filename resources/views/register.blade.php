@@ -11,7 +11,7 @@
         <label for="author_name">Nome do Autor:</label>
         <input type="text" id="author_name" name="name" required>
         <button type="submit">Cadastrar Autor</button>
-    </form>
+            </form>
 
     <!-- Formulário de Cadastro de Livro -->
     <h2 id="books">📚 Cadastrar Livro</h2>
@@ -32,6 +32,8 @@
             @endforeach
         </select>
         <button type="submit">Cadastrar Livro</button>
+
+
     </form>
 
     <!-- Formulário de Cadastro de Gênero -->
@@ -41,6 +43,7 @@
         <label for="genre_name">Nome do Gênero:</label>
         <input type="text" id="genre_name" name="name" required>
         <button type="submit">Cadastrar Gênero</button>
+
     </form>
 
     <!-- Botão de Voltar -->
@@ -48,3 +51,5 @@
         <button type="button">Voltar</button>
     </a>
 @endsection
+
+

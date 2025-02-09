@@ -18,6 +18,7 @@ Route::resource('authors', AuthorController::class);
 Route::resource('books', BookController::class);
 Route::resource('genres', GenreController::class);
 Route::get('/register', [CadastroController::class, 'create'])->name('register');
+Route::resource('authors', AuthorController::class);
 
 
 //Route::get('/register', function () {
