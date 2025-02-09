@@ -62,7 +62,7 @@
         <a href="{{ route('authors.index') }}">Authors</a>
         <a href="{{ route('books.index') }}">Books</a>
         <a href="{{ route('genres.index') }}">Genres</a>
-        <a href="{{ route('register') }}">Register</a>
+       <a href="{{ route('register') }}">Register</a>
     </div>
 
     <!-- Conteúdo Principal -->
